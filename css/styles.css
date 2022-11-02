@@ -1,0 +1,58 @@
+.violeta {
+    font-family: 'Lato', sans-serif;
+    background-color: silver;
+    color: #9D4EDD;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.btn {
+    background-color: #9D4EDD;
+    color: white;
+}
+
+
+
+/*header */
+
+
+.sobreMi {
+    
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(1, 400px);
+    grid-template-areas: "successful""informacion";
+    grid-gap: 10px;
+}
+
+.successful {
+    grid-area: successful;
+    padding: 10px;
+    text-align: center;
+}
+
+.informacion {
+    grid-area: informacion;
+    padding: 10px;
+}
+
+
+
+@media screen and (min-width:720px) {
+    .sobreMi {
+        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(3, 350px);
+        grid-template-areas: "successful successful successful" "informacion informacion informacion" ;
+    }
+    .successful {
+        grid-area: successful;
+        text-align: center;
+    }
+    .informacion {
+        grid-area: informacion;
+    }
+
+}
+/*carrusel de img*/
